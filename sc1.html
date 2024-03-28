@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home Section</h2>
+        <!-- Content for the Home section goes here -->
+    </section>
+
+    <section id="about">
+        <h2>About Section</h2>
+        <div class="section31">
+            <div class="section3">
+                <div class="sect3">
+                    <div class="about-section">
+                        <p class="ab1">About Me</p>
+                        <p class="ab2">My Introduction</p>
+                    </div>
+                    <div class="about-sect2">
+                        <div class="photo">
+
+                        </div>
+                        <div class="info111">
+                            <p class="p3">Hey there,👋 I'm Pranay a 20-year-old CSE undergrad who is passionate about
+                                Software
+                                Development, UI/UX Design and Product Management. Currently, I'm pursuing my career as a
+                                Full
+                                Stack Web Developer 👨🏻‍💻 with 3+ years of professional and freelance experience. I
+                                share my
+                                learnings through speaking engagements and write-ups. ✍🏻</p>
+                            <button class="b11">Resume<i class="uil uil-file-download-alt button_icon"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services Section</h2>
+        <!-- Content for the Services section goes here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <!-- Content for the Contact section goes here -->
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Smooth scroll to section
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
